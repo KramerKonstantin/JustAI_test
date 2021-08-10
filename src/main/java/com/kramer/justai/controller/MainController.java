@@ -28,6 +28,13 @@ public class MainController {
         this.restTemplate = restTemplate;
     }
 
+    /**
+     * Processes incoming requests. If it is a confirmation request, it sends a confirmation token, else if it is a new
+     * message, it responds to it, otherwise it does nothing.
+     *
+     * @param inputMessage incoming request in the form of JSON.
+     * @return callback api confirmation token or message that the method has completed - OK
+     */
     @RequestMapping(value = "/callback", method = RequestMethod.POST, consumes = {"application/json"})
     @ResponseBody
     public String botResponse(@RequestBody String inputMessage) {
@@ -44,7 +51,9 @@ public class MainController {
 
                 try {
                     restTemplate.getForObject(response, String.class);
-                } catch (Exception ignored) {}
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
 

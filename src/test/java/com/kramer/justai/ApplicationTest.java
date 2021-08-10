@@ -1,4 +1,4 @@
-package сom.kramer.justai;
+package com.kramer.justai;
 
 import com.kramer.justai.Application;
 import com.kramer.justai.controller.MainController;

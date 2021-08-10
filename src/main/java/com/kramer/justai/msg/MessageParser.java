@@ -5,6 +5,13 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class MessageParser {
+    /**
+     * Parses the incoming message.
+     *
+     * @param inputJSON the user's message in the form of JSON.
+     * @return {@link com.kramer.justai.msg.MessageDTO#MessageDTO(String, String, String)} or
+     * {@link com.kramer.justai.msg.MessageDTO#MessageDTO(String)}.
+     */
     public MessageDTO parseJSON(String inputJSON) {
         MessageDTO messageDTO;
 

@@ -12,13 +12,14 @@ import java.util.Random;
 public class MainController {
     private static final String CALLBACK_API_EVENT_CONFIRMATION = "confirmation";
     private static final String CALLBACK_API_EVENT_MESSAGE_NEW = "message_new";
-    private static final String VERSION_API = "5.131";
     private static final String VK_API_MESSAGE_SEND_METHOD = "https://api.vk.com/method/messages.send";
 
     @Value("${ACCESS_TOKEN}")
     private String ACCESS_TOKEN;
     @Value("${CALLBACK_API_CONFIRMATION_TOKEN}")
     private String CALLBACK_API_CONFIRMATION_TOKEN;
+    @Value("${VERSION_API}")
+    private String VERSION_API;
 
     private final Random random = new Random();
 

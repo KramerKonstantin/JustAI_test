@@ -66,8 +66,8 @@ ngrok http 8080
 
 ## Запуск
 
-Прежде чем запустить бота, нужно изменить ключ доступа (ACCESS_TOKEN) и возвращаемую строку для проверки 
-(CALLBACK_API_CONFIRMATION_TOKEN) в **application.properties**.
+Прежде чем запустить бота, нужно изменить ключ доступа (ACCESS_TOKEN), возвращаемую строку для проверки 
+(CALLBACK_API_CONFIRMATION_TOKEN) и версию API (VERSION_API) в **application.properties**.
 
 После этого запускаем **ngrok**, запускаем само приложение переходим в *Управление* > *Настройки* > *Работа с API* > 
 *Callback API* и нажимаем подтвердить. Всё, теперь бот работает:
